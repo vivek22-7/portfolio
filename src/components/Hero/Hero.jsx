@@ -19,18 +19,20 @@ const Hero = () => {
                 <img className='main-image' src="./assets/images/img.jpg" alt="" />
             </div>
             <div>
-                <div className='tech-icon'>
-                    <img src="./assets/images/html.png" alt="" />
+                <div>
+                    <div className='tech-icon'>
+                        <img src="./assets/images/html.png" alt="" />
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div className='tech-icon'>
-                    <img src="./assets/images/css-3.png" alt="" />
+                <div>
+                    <div className='tech-icon'>
+                        <img src="./assets/images/css-3.png" alt="" />
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div className='tech-icon'>
-                    <img src="./assets/images/javascript.png" alt="" />
+                <div>
+                    <div className='tech-icon'>
+                        <img src="./assets/images/javascript.png" alt="" />
+                    </div>
                 </div>
             </div>
         </div>
