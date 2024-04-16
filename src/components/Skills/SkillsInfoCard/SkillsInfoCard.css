@@ -21,18 +21,18 @@
     padding: 2rem;
 }
 
-.skills-info{
+.skill-info{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.skills-info p{
+.skill-info p{
     font-size: 1rem;
     font-weight: 500;
 }
 
-.skills-info .percentage{
+.skill-info .percentage{
     color: #dd8cfa;
 }
 
@@ -51,4 +51,18 @@
     background: linear-gradient(90deg, #aa94fe -50%, #7d60e6 50%);
     border-radius: 0.5rem;
     transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 1025px){
+    .skills-info-card h6{
+        font-size: 1.1rem;
+    }
+
+    .skill-info p{
+        font-size: 0.9rem;
+    }
+
+    .skills-info-content{
+        padding: 1.5rem;
+    }
 }
