@@ -37,3 +37,22 @@ export const SKILLS = [
         ],
     },
 ];
+
+export const PROJECTS = [
+    {
+        title: "TextUtill App",
+        url: "https://github.com/vivek22-7/textutills",
+        description: [
+            "This app is used to do basic text functions",
+            "Bootstrap frame-work is used to inhance he ui"
+        ],
+    },
+    {
+        title: "News-App",
+        url: "https://github.com/vivek22-7/News_App_Func.git",
+        description: [
+            "This app is used to view latest News",
+            "This app is intigrated with third party api"
+        ],
+    }, 
+]
