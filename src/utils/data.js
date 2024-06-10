@@ -55,4 +55,12 @@ export const PROJECTS = [
             "This app is intigrated with third party api"
         ],
     }, 
+    {
+        title: "Portfolio-App",
+        url: "https://github.com/vivek22-7/portfolio",
+        description: [
+            "You are usig this app right now",
+            "This app is an alternative to the traditional resume"
+        ],
+    }, 
 ]
