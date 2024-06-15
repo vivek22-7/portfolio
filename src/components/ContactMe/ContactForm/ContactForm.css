@@ -58,6 +58,6 @@ form button:hover {
     form button {
         font-size: 0.9rem;
         padding: 0.7rem;
-        border-radius: 0.3rem;
+        border-radius: 3rem;
     }
 }

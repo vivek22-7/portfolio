@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import MobileNav from './MobileNav/MobileNav';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -9,6 +10,20 @@ const Navbar = () => {
     const toggleMenu = () => {
         setOpenMenu(!openMenu);
     };
+
+    const [isActiveLink, setActiveLink] = useState('hero');
+    const [isScrolled, setIsScrolled] = useState(false)
+
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+
+        if(element) {
+            const marginTop = 100;
+            const scrollToY = element.getBoundingClientRect().top + window.scrollY - marginTop;
+            window.scrollTo({top: scrollToY, behavior:"smooth"});
+        }
+    }
+
 
   return (
     <>
@@ -19,16 +34,16 @@ const Navbar = () => {
 
             <ul>
                 <li>
-                    <a className='menu-item' href=''>Home</a>
+                    <a className='menu-item' onClick={() => scrollToSection('hero-container-id')}>Home</a>
                 </li>
                 <li>
-                    <a className='menu-item' href=''>Skills</a>
+                    <a className='menu-item' onClick={() => scrollToSection('skills-container-id')}>Skills</a>
                 </li>
                 <li>
-                    <a className='menu-item' href=''>Work Experience</a>
+                    <a className='menu-item' onClick={() => scrollToSection('projects-container-id')}>Projects</a>
                 </li>
                 <li>
-                    <a className='menu-item' href=''>Contace Me</a>
+                    <a className='menu-item' onClick={() => scrollToSection('contact-container-id')}>Contace Me</a>
                 </li>
             </ul>
 
