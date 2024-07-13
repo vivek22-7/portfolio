@@ -11,8 +11,8 @@ const Navbar = () => {
         setOpenMenu(!openMenu);
     };
 
-    const [isActiveLink, setActiveLink] = useState('hero');
-    const [isScrolled, setIsScrolled] = useState(false)
+    /* const [isActiveLink, setActiveLink] = useState('hero');
+    const [isScrolled, setIsScrolled] = useState(false) */
 
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
@@ -23,6 +23,10 @@ const Navbar = () => {
             window.scrollTo({top: scrollToY, behavior:"smooth"});
         }
     }
+
+    /* const determineActiveSection = () => {
+
+    } */
 
 
   return (
